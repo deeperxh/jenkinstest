@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
         @RequestMapping("/")
         @ResponseBody
         String home() {
-            return "Love KK!\n"+"Love Xiaohan!";
+            return "XH Love KK!\n"+"KK Love Xiaohan!";
         }
 
 
