@@ -8,7 +8,7 @@
      }
 
      stage('deploy') {
-         sh 'nohup java -jar target/jenkinsdemo.jar &'
+         sh 'JENKINS_NODE_COOKIE=dontKillMe nohup java -jar target/jenkinsdemo.jar 2>&1 &'
      }
 
      stage('results') {
