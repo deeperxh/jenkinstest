@@ -8,7 +8,7 @@
      }
 
      stage('deploy') {
-         sh 'docker cp target/ROOT.war tomcat1:/usr/local/tomcat/webapps'
+         sh 'java -jar target/jenkinsdemo.jar'
      }
 
      stage('results') {

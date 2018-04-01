@@ -6,7 +6,7 @@
     <groupId>com.deeperxh</groupId>
     <artifactId>jenkinsdemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>jenkinsdemo</name>
     <description>测试jenkins的使用</description>
@@ -43,7 +43,7 @@
     </dependencies>
 
     <build>
-        <finalName>ROOT</finalName>
+        <finalName>jenkinsdemo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
