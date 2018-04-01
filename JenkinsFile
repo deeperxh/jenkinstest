@@ -8,7 +8,7 @@
      }
 
      stage('deploy') {
-         sh 'java -jar target/jenkinsdemo.jar'
+         sh 'nohup java -jar target/jenkinsdemo.jar &'
      }
 
      stage('results') {
