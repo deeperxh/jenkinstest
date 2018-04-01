@@ -1,0 +1,17 @@
+     node {
+         stage('SCM') {
+             git 'https://github.com/deeperxh/jenkinstest.git'
+         }
+
+         stage('build') {
+             mvn -B clean package"
+         }
+
+         stage('deploy') {
+             docker cp target/jenkinsdemo-0.0.1-SNAPSHOT.war tomcat1:/usr/local/tomcat/webapps
+         }
+
+         stage('results') {
+             archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
+         }
+     }
